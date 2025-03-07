@@ -1,4 +1,4 @@
-# OXTA AI - Uncensored Chatbot
+# OXTA AI - Chatbot
 
 OXTA AI is an AI chatbot built with Flask (Python) for the backend and React for the frontend. It integrates with DeepSeek for AI-generated responses and OpenWeatherMap for weather information. This project maintains context memory across multiple user interactions.
 
