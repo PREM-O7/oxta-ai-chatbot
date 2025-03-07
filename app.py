@@ -18,6 +18,10 @@ headers = {
     "Content-Type": "application/json"
 }
 
+@app.route('/')
+def home():
+    return "Oxta AI Backend is Running!"
+
 def chat_with_deepseek(prompt, user_id, model="deepseek-chat", max_tokens=150):
     """
     Sends a prompt to the DeepSeek API and returns the AI's response.
@@ -90,4 +94,4 @@ def chat():
     return jsonify({"response": response})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
